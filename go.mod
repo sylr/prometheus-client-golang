@@ -14,10 +14,18 @@ require (
 	github.com/prometheus/common v0.18.0
 	github.com/prometheus/procfs v0.6.0
 	golang.org/x/net v0.0.0-20200625001655-4c5254603344 // indirect
+	golang.org/x/oauth2 v0.0.0-20190226205417-e64efc72b421 // indirect
 	golang.org/x/sys v0.0.0-20210309074719-68d13333faf2
 	golang.org/x/text v0.3.2 // indirect
+	google.golang.org/appengine v1.4.0 // indirect
 	google.golang.org/protobuf v1.23.0 // indirect
 	gopkg.in/yaml.v2 v2.3.0 // indirect
 )
 
 go 1.17
+
+replace (
+	github.com/go-kit/kit => github.com/sylr/go-kit v0.10.1-0.20210514183318-9e15a6c04c36
+	github.com/go-kit/kit/log => github.com/sylr/go-kit/log v0.0.0-20210514183318-9e15a6c04c36
+	github.com/prometheus/common => github.com/sylr/prometheus-common v0.2.1-0.20210514183700-f2f276d202e2
+)
